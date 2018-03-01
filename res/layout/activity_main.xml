@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.SoftwareProject.beuth.MainActivity" >
+
+    <!-- Layout zur MainActivity (Quizz) -->
+    
+    <!-- Diese Small-Version der Quizz-Activity ist fuer Handys geeignet.
+    Fuer Tabletts bitte folgende Aenderungen vornehmen:
+    Large: marginTop="20dp" statt 18dp
+    and textSize="30sp" statt 22sp
+    and textAppearance="?android:attr/textAppearanceLarge" statt "Medium"
+    -->
+    
+    <!-- Slogan der App -->
+    <TextView
+        android:id="@+id/entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:textSize="22sp"
+        android:text="@string/entry" />
+	
+	<!-- Trennlinie Start -->
+    <TextView
+        android:id="@+id/lineone"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="18dp"
+        android:layout_below="@+id/entry"
+        android:background="#FF000000" />
+    <!-- Trennlinie Ende -->
+    
+	<!-- Ausgabe der Themen, Fragen, Antworten und Pause-Meldung -->
+	<TextView
+        android:id="@+id/stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:text=""
+        android:layout_below="@+id/lineone"
+    	android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+	<!-- Ja/Nein-Auswahl zur Beantwortung der Fragen -->
+	<RadioGroup
+        android:id="@+id/radioQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/stage" >
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_yes" 
+            android:layout_marginTop="18dp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_no"
+            android:layout_marginTop="18dp" />
+    </RadioGroup>
+
+    <!-- Zur Ueberpruefung der Antwort-Auswahl -->
+    <Button
+        android:id="@+id/buttonAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/button_answer" />  
+	
+	<!-- Gibt die letzte/nicht beantwortete Frage aus -->
+	<Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+		android:orientation="horizontal"        
+		android:layout_toLeftOf="@+id/pause"
+		android:layout_below="@+id/buttonAnswer"
+        android:layout_marginTop="15dp"
+        android:text="@string/back" />
+	
+	<!-- Speichert eine Frage fuer spaeter
+	ab Version v2.0.1 -->
+	<Button
+		android:id="@+id/pause"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:orientation="horizontal"
+		android:layout_below="@+id/buttonAnswer"
+		android:layout_marginTop="15dp"
+		android:text="@string/pause" />
+	
+	<!-- Gibt die naechste Frage aus -->
+	<Button
+		android:id="@+id/next"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:orientation="horizontal"
+		android:layout_toRightOf="@+id/pause"
+		android:layout_below="@+id/buttonAnswer"
+		android:layout_marginTop="15dp"
+		android:text="@string/next" />
+	
+	<!-- Oeffnet wikipedia.de im Browser -->
+	<Button
+        android:id="@+id/wiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+		android:orientation="horizontal"        
+		android:layout_toLeftOf="@+id/google"
+		android:layout_below="@+id/pause"
+        android:layout_marginTop="15dp"
+        android:text="@string/gotoWikipedia" />
+	
+	<!-- Oeffnet google.de im Browser -->
+	<Button
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+		android:orientation="horizontal"        
+		android:layout_below="@+id/pause"
+        android:layout_marginTop="15dp"
+        android:text="@string/gotoGoogle" />
+	
+	<!-- Oeffnet das Menu der App -->
+	<Button
+		android:id="@+id/returnlanding"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:orientation="horizontal"
+		android:layout_toRightOf="@+id/google"
+		android:layout_below="@+id/pause"
+		android:layout_marginTop="15dp"
+		android:text="@string/return_landing" />
+	
+	<!-- Trennlinie Start -->
+    <TextView
+        android:id="@+id/linetwo"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="18dp"
+        android:layout_below="@+id/google"
+        android:background="#FF000000" />
+    <!-- Trennlinie Ende -->
+    
+	<!-- Eingabemoeglichkeit zur Bewertung der Frage
+	ab Version v2.0.1 -->
+	<EditText
+	    android:id="@+id/commentAnswer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:layout_below="@+id/linetwo"
+	    android:layout_gravity="start"
+	    android:background="@color/blueFields"
+	    android:hint="@string/comment_Answer"
+	    android:inputType="textMultiLine"
+	    android:minHeight="25dp" />
+	
+	<!-- Button zur Falsch-Anzeige einer Antwort 
+	ab Version v2.0.1 -->
+	<RadioGroup
+        android:id="@+id/radioComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/commentAnswer" >
+
+        <RadioButton
+            android:id="@+id/radioNotCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_notCorrect" 
+            android:layout_marginTop="0dp" />
+    </RadioGroup>
+    
+	<!-- Speichern der Bewertung in DB
+	ab Version v2.0.1 -->
+	<Button
+	    android:id="@+id/saveComment"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/google"
+	    android:layout_below="@+id/commentAnswer"
+	    android:text="@string/save_Comment" />
+		
+	<!-- Zum Anzeigen der Einstellungen -->
+	<TextView
+        android:id="@+id/textUserSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity" />
+	
+	<!-- Zum Anzeigen von Fehlermeldungen
+	aus dem ExceptionHandler bzw. der CrashActivity -->
+	<TextView 
+		android:id="@+id/error" 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent" /> 
+	
+</RelativeLayout>

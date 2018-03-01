@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Ergaenzung zu den Einstellungen der App -->
+    
+    <!-- Wiederholungsrate Default-Werte -->
+    <string-array name="syncFrequency">
+        <item name="1">Stündlich</item>
+        <item name="12">Mittags</item>
+        <item name="24">Täglich</item>
+        <item name="0">Manuell</item>
+    </string-array>
+    
+    <string-array name="syncFrequencyValues">
+        <item name="1">1</item>
+        <item name="12">12</item>
+        <item name="24">24</item>
+        <item name="0">0</item>
+    </string-array>
+
+    <!-- Wiederholungsmuster Default-Werte -->
+    <string-array name="repQuestions">
+        <item name="1">Alle Fragen, zufällig</item>
+        <item name="2">Alle Fragen, nach Datum</item>
+        <item name="3">Falsch beantwortete Fragen</item>
+        <item name="0">Manuell</item>
+    </string-array>
+    
+    <string-array name="repQuestionsValues">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="0">0</item>
+    </string-array>
+    
+    <!-- Antwortzeit Default-Werte -->
+    <string-array name="timeAnswers">
+        <item name="10">10 Sekunden</item>
+        <item name="30">30 Sekunden</item>
+        <item name="60">1 Minute</item>
+        <item name="100">Länger</item>
+    </string-array>
+    
+    <string-array name="timeAnswersValues">
+        <item name="10">10</item>
+        <item name="30">30</item>
+        <item name="60">60</item>
+        <item name="100">100</item>
+    </string-array>
+    
+</resources>
