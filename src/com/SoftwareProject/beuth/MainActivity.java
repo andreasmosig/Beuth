@@ -232,7 +232,6 @@ public class MainActivity extends AppCompatActivity {
 	 *		startActivity(new Intent(this, EinstellungenActivity.class));
 	 *		return true;
 	 *	}
-	 *
 	 *	switch (item.getItemId()) {
 	 *	
 	 *	case R.id.action_settings:
