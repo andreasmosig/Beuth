@@ -8,8 +8,8 @@
     <string name="peatDescription">#peat - Erlerntes spielend wiederholen und nie wieder vergessen!</string>
 	
     <!-- Definiton Corporate Design Farben -->
-    <color name="blue">#51c8fc</color>
-    <color name="blueFields">#a2c7d6</color>
+    <color name="white">#F5F5F5</color>
+    <color name="whiteFields">#dfedf2</color>
     
     <!-- Definiton Buttontexte LandingActivity -->
     <string name="game">Starte #peat</string>
