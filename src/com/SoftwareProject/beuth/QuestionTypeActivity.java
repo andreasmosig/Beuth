@@ -61,7 +61,7 @@ public class QuestionTypeActivity extends AppCompatActivity {
 		 	
 		 	@Override
 		 	public void onClick(View v) {
-		 		Intent intentsingle = new Intent(QuestionTypeActivity.this, UnderConstructionActivity.class);
+		 		Intent intentsingle = new Intent(QuestionTypeActivity.this, SingleChoiceQuestionInputActivity.class);
 		 		QuestionTypeActivity.this.startActivity(intentsingle);
 		 	}
 		});
@@ -70,7 +70,7 @@ public class QuestionTypeActivity extends AppCompatActivity {
 		 	
 		    @Override
 		 	public void onClick(View v) {
-		 		Intent intentmulitple = new Intent(QuestionTypeActivity.this, UnderConstructionActivity.class);
+		 		Intent intentmulitple = new Intent(QuestionTypeActivity.this, MultipleQuestionInputActivity.class);
 		 		QuestionTypeActivity.this.startActivity(intentmulitple);
 			}
 		});

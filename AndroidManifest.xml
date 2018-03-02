@@ -63,12 +63,34 @@
                 android:value="com.SoftwareProject.beuth.MainActivity" />
         </activity>
         
-        <!-- QuestionInputActivity (Speichern von Fragen) -->
+        <!-- QuestionInputActivity (Speichern von Ja/Nein-Fragen) -->
         <activity
             android:name=".QuestionInputActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.SoftwareProject.beuth.QuestionInputActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- SingleQuestionInputActivity (Speichern von Single Choice-Fragen) -->
+        <activity
+            android:name=".SingleChoiceQuestionInputActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.SoftwareProject.beuth.SingleChoiceQuestionInputActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- MultipleQuestionInputActivity (Speichern von Multiple Choice-Fragen) -->
+        <activity
+            android:name=".MultipleQuestionInputActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.SoftwareProject.beuth.MultipleQuestionInputActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

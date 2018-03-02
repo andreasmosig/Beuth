@@ -12,13 +12,13 @@
     <color name="whiteFields">#dfedf2</color>
     
     <!-- Definiton Buttontexte LandingActivity -->
-    <string name="game">Starte #peat</string>
+    <string name="game">Starte das Quiz</string>
     <string name="question">Neue Frage eingeben</string>
     <string name="theme">Wähle dein Thema</string>
     <string name="setting">Einstellungen</string>
 
     <!-- Definiton Buttontexte MainActivity -->
-    <string name="app_name">#peat</string>
+    <string name="app_name">#peat - Spielend lernen! Nie wieder vergessen!</string>
     <string name="entry">Spielend lernen! Nie wieder vergessen!</string>
     <string name="radio_yes">Ja</string>
     <string name="radio_no">Nein</string>
@@ -44,10 +44,20 @@
 
     <!-- Definiton Texte QuestionInputActivity -->
     <string name="headQuestionTypeYesNo">Ja/Nein-Frage einfügen!</string>
+    <string name="headQuestionTypeMultiple">Multiple Choice-Frage einfügen!</string>
+    <string name="headQuestionTypeSingle">Single Choice-Frage einfügen!</string>
     <string name="hintQuestionTypeYesNoTheme">Gib hier das Thema ein!</string>
     <string name="hintQuestionTypeYesNoQuestion">Gib hier die Frage ein!</string>
     <string name="hintQuestionTypeYesNoAnswer">Gib hier die Antwort ein!</string>
     <string name="saveQuestionTypeYesNo">Speichern</string>
+    <string name="hintQuestionTypeMultipleTheme">Gib hier das Thema ein!</string>
+    <string name="hintQuestionTypeMultipleQuestion">Gib hier die Frage ein!</string>
+    <string name="hintQuestionTypeMultipleAnswer">Gib hier die Antwort ein!</string>
+    <string name="saveQuestionTypeMultiple">Speichern</string>
+    <string name="hintQuestionTypeSingleTheme">Gib hier das Thema ein!</string>
+    <string name="hintQuestionTypeSingleQuestion">Gib hier die Frage ein!</string>
+    <string name="hintQuestionTypeSingleAnswer">Gib hier die Antwort ein!</string>
+    <string name="saveQuestionTypeSingle">Speichern</string>
     <string name="editText_errorMessage">Ein Feld ist leer. Deine Frage kann nicht gespeichert werden. Bitte alle Felder ausfüllen.</string>
 	<string name="text_yes">Ja</string>
 	<string name="text_no">Nein</string>
@@ -62,7 +72,7 @@
     <string name="pref_user_profile">Benutzerprofil</string>
     <string name="pref_user_name">Benutzername</string>
     <string name="pref_user_name_summary">Ändere hier deinen Benutzernamen.</string>
-    <string name="pref_quizz_setting">Quizz-Einstellungen</string>
+    <string name="pref_quizz_setting">Quiz-Einstellungen</string>
     <string name="themes_list">Liste der Themen</string>
     <string name="themes_title">Themen</string>
     <string name="themes_default">Softwaretechnik, Entwicklung, Scrum, eigene Fragen</string>
